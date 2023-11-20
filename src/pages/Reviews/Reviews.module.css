@@ -1,0 +1,18 @@
+.reviewsWrapper {
+  padding: 20px;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewsParagraph {
+  font-weight: bold;
+}
+
+.noReviews {
+  text-align: center;
+  font-weight: bold;
+}
