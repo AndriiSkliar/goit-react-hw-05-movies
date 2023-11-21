@@ -1,8 +1,8 @@
-.backLinckWrapper {
+.backLinkWrapper {
   padding: 10px 0;
 }
 
-.backLinck {
+.backLink {
   margin-right: 15px;
   --b: 3px;
   --s: 0.45em;
@@ -30,14 +30,14 @@
   touch-action: manipulation;
 }
 
-.backLinck:hover,
-.backLinck:focus-visible {
+.backLink:hover,
+.backLink:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: 0.05em;
 }
 
-.backLinck:active {
+.backLink:active {
   background: var(--color);
   color: #fff;
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import css from './CardOfFilm.module.css'
 
 export const CardOfFilm = ({ film }) => {
@@ -18,6 +19,7 @@ export const CardOfFilm = ({ film }) => {
         <code>{overview}</code>
       </div>
     </div>
-  )
-}
+  );
+};
+
 

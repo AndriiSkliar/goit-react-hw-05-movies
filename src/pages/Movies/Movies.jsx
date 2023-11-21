@@ -21,8 +21,6 @@ const Movies = () => {
         setIsLoading(true);
         const data = await fetchData(path);
         setMovieDetails(data);
-        const dataFilms = JSON.stringify(data.results);
-        localStorage.setItem("films", dataFilms);
       } catch (error) {
         setError(error.message);
       } finally {

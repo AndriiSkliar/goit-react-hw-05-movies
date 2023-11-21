@@ -12,7 +12,7 @@ const Reviews = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    if (movieDetails !== null) return;
+    if (!movieId) return;
     const path = `movie/${movieId}/reviews`;
 
     const fetchMovieDetails = async () => {
@@ -28,7 +28,7 @@ const Reviews = () => {
     };
 
     fetchMovieDetails();
-  }, [movieId, movieDetails]);
+  }, [movieId]);
 
   return (
     <div className={css.reviewsWrapper}>

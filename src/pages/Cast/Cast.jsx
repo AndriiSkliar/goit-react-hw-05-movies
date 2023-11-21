@@ -13,7 +13,7 @@ const Cast = () => {
   const defaultImg = "https://kartinkof.club/uploads/posts/2022-04/1649989581_17-kartinkof-club-p-koshechki-kartinki-prikolnie-17.jpg";
 
   useEffect(() => {
-    if (movieDetails !== null) return;
+    if (!movieId) return;
     const path = `movie/${movieId}/credits`
 
     const fetchMovieDetails = async () => {
@@ -29,7 +29,7 @@ const Cast = () => {
     };
 
     fetchMovieDetails();
-  }, [movieId, movieDetails]);
+  }, [movieId]);
 
   return (
     <div>
